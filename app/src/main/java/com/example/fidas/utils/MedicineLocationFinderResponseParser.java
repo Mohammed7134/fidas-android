@@ -2,9 +2,7 @@ package com.example.fidas.utils;
 
 import com.example.fidas.entity.FindMedicineLocationResponse;
 import com.example.fidas.entity.Locations;
-import com.example.fidas.entity.LogInResponse;
 import com.example.fidas.entity.MedicineLocation;
-import com.example.fidas.entity.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;

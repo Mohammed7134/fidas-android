@@ -1,7 +1,5 @@
 package com.example.fidas.utils;
 
-import android.util.Log;
-
 import com.example.fidas.entity.LogInResponse;
 import com.example.fidas.entity.User;
 

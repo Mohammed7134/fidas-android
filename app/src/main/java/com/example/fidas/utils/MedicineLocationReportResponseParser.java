@@ -1,9 +1,7 @@
 package com.example.fidas.utils;
 
-import com.example.fidas.entity.FindMedicineLocationResponse;
 import com.example.fidas.entity.Locations;
 import com.example.fidas.entity.MedicineLocation;
-import com.example.fidas.entity.MedicineLocationReport;
 import com.example.fidas.entity.MedicineLocationReportResponse;
 import com.example.fidas.entity.Report;
 
