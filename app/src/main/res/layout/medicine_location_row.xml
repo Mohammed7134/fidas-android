@@ -17,8 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
+        android:textStyle="bold"
         tools:text="Name of the medicinal product"
-
         />
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:textStyle="bold"
             tools:text="location1"
             />
         <View style="@style/Divider.Vertical"/>
@@ -37,6 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:textStyle="bold"
             tools:text="location2"
             />
         <View style="@style/Divider.Vertical"/>
@@ -46,6 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:textStyle="bold"
             tools:text="location3"
             />
         <View style="@style/Divider.Vertical"/>
@@ -55,6 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
+            android:textStyle="bold"
             tools:text="location4"
             />
     </LinearLayout>
