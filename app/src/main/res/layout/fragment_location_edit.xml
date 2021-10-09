@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".uiAdmin.LocationEditFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/medicine_name_in_edit_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp"
+            android:paddingVertical="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            tools:text="Adrenaline 1mg/ml ampule"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="12dp"
+            >
+            <TextView
+                android:id="@+id/drug_first_location_row_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:text="location1"
+                />
+            <View style="@style/Divider.Vertical"/>
+
+            <TextView
+                android:id="@+id/drug_second_location_row_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:text="location2"
+                />
+            <View style="@style/Divider.Vertical"/>
+
+            <TextView
+                android:id="@+id/drug_third_location_row_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:text="location3"
+                />
+            <View style="@style/Divider.Vertical"/>
+
+            <TextView
+                android:id="@+id/drug_forth_location_row_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                tools:text="location4"
+                />
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center"
+            android:layout_marginVertical="32dp"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_code1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_code2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="16dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_code2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_code3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/spinner_code1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="16dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_code3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="32dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/spinner_code2"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginHorizontal="16dp"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/submit_edit_button"
+            android:text="@string/submit"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="32dp"
+            />
+        <Button
+            android:id="@+id/delete_report_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_report"
+            android:layout_marginHorizontal="16dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            />
+    </LinearLayout>
+
+</FrameLayout>

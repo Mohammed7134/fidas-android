@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:id="@+id/parent_row"
+    android:background="@drawable/text_edit_drawable"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="3dp"
+    >
+    <TextView
+        android:id="@+id/drug_name_location_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:text="Name of the medicinal product"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/drug_first_location_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="location1"
+            />
+        <View style="@style/Divider.Vertical"/>
+
+        <TextView
+            android:id="@+id/drug_second_location_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="location2"
+            />
+        <View style="@style/Divider.Vertical"/>
+
+        <TextView
+            android:id="@+id/drug_third_location_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="location3"
+            />
+        <View style="@style/Divider.Vertical"/>
+
+        <TextView
+            android:id="@+id/drug_forth_location_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            tools:text="location4"
+            />
+    </LinearLayout>
+
+</LinearLayout>

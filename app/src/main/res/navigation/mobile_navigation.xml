@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.fidas.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_location_finder"
+            app:destination="@id/nav_location_finder" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_location_finder"
+        android:name="com.example.fidas.ui.locationFinder.LocationFinderFragment"
+        android:label="@string/menu_location_finder"
+        tools:layout="@layout/fragment_find_medicine"
+        />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.fidas.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.fidas.ui.about.AboutFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>
